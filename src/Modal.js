@@ -15,8 +15,10 @@ const Modal = (props, ref) => {
         openModal: () => setModalState(true)
       };
     },
-    [] // ! add this to prevent trigger when component re-render, like useEffect, useMemo, useCallback
+    [] // ! add [] to prevent trigger when component re-render, like useEffect, useMemo, useCallback
   );
+    
+    // Explain useImperativeHandle: Can create methods inteads of default methods in ref.
 
     console.log('child rendered')
 

@@ -18,7 +18,7 @@ const Modal = (props, ref) => {
     [] // ! add [] to prevent trigger when component re-render, like useEffect, useMemo, useCallback
   );
     
-    // Explain useImperativeHandle: Can create methods inteads of default methods in ref.
+    // Explain useImperativeHandle: Can create methods inteads of default methods in ref, and prvent re-render parent component
 
     console.log('child rendered')
 
